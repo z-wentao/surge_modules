@@ -1,0 +1,9 @@
+#!name=bypassSMTP
+#!desc=让 Mailtrap SMTP 流量走直连，绕过代理
+
+[Rule]
+# Mailtrap 域名走直连
+DOMAIN-SUFFIX,mailtrap.io,DIRECT,no-resolve
+DOMAIN,sandbox.smtp.mailtrap.io,DIRECT,no-resolve
+DOMAIN,bulk.smtp.mailtrap.io,DIRECT,no-resolve
+DOMAIN,live.smtp.mailtrap.io,DIRECT,no-resolve
