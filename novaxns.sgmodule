@@ -1,0 +1,16 @@
+#!name = NovaXNS-DoH
+#!desc = 使用 NovaXNS DNS-over-HTTPS (DoH)
+
+[General]
+allow-dns-svcb = false
+dns-server = 119.29.29.29, 223.5.5.5
+encrypted-dns-server = https://jp.pro.xns.one/ojJzFpofv0A/default/dns-query, https://jp.beta.xns.one/ojJzFpofv0A/default/dns-query, https://jp.kahkee.xns.one/ojJzFpofv0A/dns-query, https://45.141.139.16/ojJzFpofv0A/dns-query
+
+[Host]
+miwifi.com = 192.168.31.1
+*.arpa  = server:system
+*.local  = server:system
+*.lan  = server:system
+*.internal  = server:system
+*.localhost  = server:system
+captive.apple.com = server:system
