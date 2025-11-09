@@ -1,0 +1,14 @@
+#!name = IPv6 Support
+#!desc = 启用完整的 IPv6 支持和自动 VIF 配置
+#!author = Assistant
+#!homepage = https://manual.nssurge.com/
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/IPv6.png
+
+[General]
+# 启用完整的 IPv6 支持
+# 启用后会查询域名的 AAAA 记录
+ipv6 = true
+
+# 允许 IPv6 流量通过 Surge VIF
+# auto: 仅当本地网络有有效的 IPv6 网络时才启用
+ipv6-vif = auto
